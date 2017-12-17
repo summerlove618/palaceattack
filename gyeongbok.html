@@ -1,52 +1,77 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <title>Palace Attack</title>
-  <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Palace Attack</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
 </head>
+
 <body>
-  <header class="gyeongbok">
-    <a href="index.html"><img src="back.png" alt=""></a>
-  </header>
+    <header class="gyeongbok">
+        <a href="index.html"><img src="back.png" alt=""></a>
+    </header>
+    <section class="kb-main">
+        <h1>GyeongBok<br>Palace</h1>
+        <p>Built in 1395, Gyeongbokgung Palace is also commonly referred to as the Northern Palace because its location is furthest north when compared to the neighboring palaces of Changdeokgung (Eastern Palace) and Gyeonghuigung (Western Palace) Palace.
+            <br>
+            <br>Gyeongbokgung Palace is arguably the most beautiful, and remains the largest of all five palaces. The premises were once destroyed by fire during the Imjin War (Japanese Invasions, 1592-1598).
+            <br>
+            <br>However, all of the palace buildings were later restored under the leadership of Heungseondaewongun during the reign of King Gojong (1852-1919).
+            </p>
+        <h2>Location</h2>
+        <div id="map" style="height:600px; width:100%">
+        </div>
+        <h2>Directions</h2>
+        <p><span class="title">[Subway]</span>
+            <br> Gyeongbokgung Station (Seoul Subway Line 3) and Exit 5.
+            <br> Anguk Station (Seoul Subway Line 3) and Exit 1.
+            <br>
+            <br>
+            <span class="title">[Bus]</span>
+            <br> Take Bus No. 1020, 7025,109, 171, 172, 601 or 606 and get off at Gyeongbokgung Palace Bus Stop.s
+            <br> Take Jongno Bus No. 11 and get off at National Folk Musuem of Korea Bus Stop.</p>
+        <h2>Operating Hours</h2>
+        <p>January-February 09:00-17:00
+            <br> March-May 09:00-18:00
+            <br> June-August 09:00-18:30
+            <br> September-October 09:00-18:00
+            <br> November-December 09:00-17:00
+            <br>
+        </p>
+        <h2>Admission Fees</h2>
+        <p>
+            <span class="title">Adults (ages 19-64): </span>3,000 won / Groups (10 people or more): 2,400 won
+            <br>
+            <span class="title">Children (ages 7-18): </span>1,500 won / Groups (10 people or more): 1,200 won</p>
+        <h2>Attack</h2>
+        <p>1. You are about to attack Gyeongbok Palace and conquer it!
+            <br>2. You have to complete 10 missions to conquer Gyeongbok palace.
+            <br>3. The missions will be a guide when you travel in the Gyeongbok Palace!</p>
+        <div style="text-align: center">
+            <a href="mission.html">
+                <button class="black">Start Mission</button>
+            </a>
+        </div>
+    </section>
+    <script>
+    function initMap() {
+        var myLatLng = { lat: 37.579617, lng: 126.977041 };
+        // Create a map object and specify the DOM element for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+            center: myLatLng,
+            zoom: 15
 
-  <section class="kb-main">
-      <h1>GyeongBok<br>Palace</h1> 
-      <p>Built in 1395, Gyeongbokgung Palace is also commonly referred to as the Northern Palace because its location is furthest north when compared to the neighboring palaces of Changdeokgung (Eastern Palace) and Gyeonghuigung (Western Palace) Palace. Gyeongbokgung Palace is arguably the most beautiful, and remains the largest of all five palaces. 
-
-The premises were once destroyed by fire during the Imjin War (Japanese Invasions, 1592-1598). However, all of the palace buildings were later restored under the leadership of Heungseondaewongun during the reign of King Gojong (1852-1919). 
-
-Remarkably, the most representative edifices of the Joseon Dynasty, Gyeonghoeru Pavilion and Hyangwonjeong Pond have remained relatively intact. Woldae and the sculptures of Geunjeongjeon (The Royal Audience Chamber) represent past sculptures of contemporary art. 
-
-The National Palace Museum of Korea is located south of Heungnyemun Gate, and the National Folk Museum is located on the eastern side within Hyangwonjeong.</p>
-      <h2>Location</h2>
-      <div style="background-image: url('gyeongbokmap.png'); height: 500px; width:100%; background-position: center center">
-      </div>
-      <h2>Directions</h2>
-      <p><span class="title">[Subway]</span><br>
-Gyeongbokgung Station (Seoul Subway Line 3) and Exit 5.<br>
-Anguk Station (Seoul Subway Line 3) and Exit 1. <br>
-<br>
-<span class="title">[Bus]</span><br>
-Take Bus No. 1020, 7025,109, 171, 172, 601 or 606 and get off at Gyeongbokgung Palace Bus Stop.<br>
-
-Take Jongno Bus No. 11 and get off at National Folk Musuem of Korea Bus Stop.</p>
-      <h2>Operating Hours</h2>
-      <p>January-February 09:00-17:00<br>
-March-May 09:00-18:00<br>
-June-August 09:00-18:30<br>
-September-October 09:00-18:00<br>
-November-December 09:00-17:00<br>
-</p>
-<h2>Admission Fees</h2>
-<p>
-<span class="title">Adults (ages 19-64): </span>3,000 won / Groups (10 people or more): 2,400 won<br>
-<span class="title">Children (ages 7-18): </span>1,500 won / Groups (10 people or more): 1,200 won</p>
-<div style="text-align: center"><button class="black">Start Mission</button></div>
-
-
-  </section>
-  
+        });
+        // Create a marker and set its position.
+        var marker = new google.maps.Marker({
+            map: map,
+            position: myLatLng,
+        });
+    }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHYTCaecVPmOPznYBr3UryfZ26O9N2YbI&callback=initMap" async defer></script>
 </body>
+
 </html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Palace Attack</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
+</head>
+
+<body>
+    <header class="mission" style="background-image: url('mission4.jpg'); background-size:cover;">
+        <a href="mission3.html"><img src="back.png" alt=""></a>
+    </header>
+    <section class="kb-main">
+        <h1>Mission 4:<br>Gangnyeongjeon Hall</h1>
+        <p>You are now in stage 4.
+            <br>You can check the location from the inner map and move to spot 4 .
+            <br>
+            <br><span class="title">"Your fourth mission is to find out how Gangnyeongjeon was used by reading the history!"</span></p>
+        <h2>History</h2>
+        <p>Gangnyeongjeon Hall, named after the virtue of health, served as the living quarters and resting area for the king. It was first constructed in 1395. The king also met with his entourage here to discuss daily activities, state affairs, and office duties.</p>
+        <h2>Inner Map</h2>
+        <div class="missionmap" style="height:600px; width:100%">
+        </div>
+        <p style="text-align: center;">You are now at Spot 4</p>
+        <h2>Insert your mission here!</h2>
+        <p>You can proceed to the next Stage when you have finished your mission.
+        </p>
+        <input type="text" onchange="visible(value)" style="margin-left:30%; margin-top:5%">
+        <input type="submit">
+        <div style="text-align: center">
+            <p>
+                <br> Hint:
+                <br>served as the ________ or
+                <br> ________ for the king</p>
+            <a href="mission5.html">
+                <button id="button-visible" class="black">Next Mission</button>
+            </a>
+        </div>
+    </section>
+</body>
+<script>
+function visible(x) {
+    if (x == "living quarters" || x == "resting area") {
+        document.getElementById("button-visible").style.visibility = "visible";
+    }
+
+}
+</script>
+
+</html>

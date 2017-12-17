@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Palace Attack</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
+</head>
+
+<body>
+    <header class="mission" style="background-image: url('mission8.jpg'); background-size:cover;">
+        <a href="mission7.html"><img src="back.png" alt=""></a>
+    </header>
+    <section class="kb-main">
+        <h1>Mission 8:<br>Hyangwonjeong Pavilion</h1>
+        <p>You are now in stage 8.
+            <br>You can check the location from the inner map and move to spot 9.
+            <br>
+            <br><span class="title">"Take a photo of you on the bridge of Hyangwonjeong Pavilion with a flower pose just like below."</span></p>
+        <div class="inner-img" style="background-image: url('flowerpose.jpg');"></div>
+        <h2>History</h2>
+        <p>Hyangwonjeong Pavilion is a two story hexagonal pavilion built on a small island in the middle of a lake on the northern grounds of Gyeongbokgung Palace.The beautiful pavilion was built on an artificial island in the middle of Hyangwonji pond by King Gojong during the 10th year of his reign in 1873.
+            <br>
+            <br> The bridge, which allows private access to the island, is known as Chwihyanggyo Bridge. The original bridge was located on the opposite side of the island and was constructed only of wood. At the time, it was one of the longest wooden bridges.</p>
+        <h2>Inner Map</h2>
+        <div class="missionmap" style="height:600px; width:100%">
+        </div>
+        <p style="text-align: center;">You are now at Spot 9</p>
+        <h2>Insert your mission here!</h2>
+        <p>You can proceed to the next Stage when you have finished your mission.
+        </p>
+        <input type="file" onchange="visible()" style="margin-left:20%; margin-top:5%">
+        <div style="text-align: center">
+            <a href="mission9.html">
+                <button id="button-visible" class="black">Next Mission</button>
+            </a>
+        </div>
+    </section>
+</body>
+<script>
+function visible() {
+    document.getElementById("button-visible").style.visibility = "visible";
+}
+</script>
+
+</html>

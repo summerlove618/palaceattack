@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Palace Attack</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
+</head>
+
+<body>
+    <header class="mission" style="background-image: url('mission9.jpeg'); background-size:cover;">
+        <a href="mission8.html"><img src="back.png" alt=""></a>
+    </header>
+    <section class="kb-main">
+        <h1>Mission 9:<br>Gyeonghoeru Pavilion</h1>
+        <p>You are now in stage 9. <br>You are almost there to finish the mission!
+            <br>You can check the location from the inner map and move to spot 12.
+            <br>
+            <br><span class="title">"Take a photo of you with the background of the Gyeonghoeru Pavilion!"</span></p>
+        
+        <h2>History</h2>
+        <p>Gyeonghoeru Pavilion was used for entertainment when important foreign visitors visited the palace. The current structure dates back to 1867. The name Gyeonghoeru is a reference to the king and how he can succeed and be a great leader when he is surrounded by the right people.</p>
+        <h2>Inner Map</h2>
+        <div class="missionmap" style="height:600px; width:100%">
+        </div>
+        <p style="text-align: center;">You are now at Spot 9</p>
+        <h2>Insert your mission here!</h2>
+        <p>You can proceed to the next Stage when you have finished your mission.
+        </p>
+       <input type="file" onchange="visible()" style="margin-left:20%; margin-top:5%">
+        <div style="text-align: center">
+            <a href="mission10.html">
+                <button id="button-visible" class="black">Next Mission</button> </a>
+        </div>
+       
+    </section>
+</body>
+<script>
+function visible() {
+    document.getElementById("button-visible").style.visibility = "visible";
+}
+</script>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Palace Attack</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
+</head>
+
+<body>
+    <header class="mission" style="background-image: url('mission5.jpg'); background-size:cover;">
+        <a href="mission4.html"><img src="back.png" alt=""></a>
+    </header>
+    <section class="kb-main">
+        <h1>Mission 5:<br>Sojubang</h1>
+        <p>You are now in stage 5.
+            <br>You can check the location from the inner map and move to spot 14 .
+            <br>
+            <br><span class="title">"Your fifth mission is to find out what the round thing below is!"</span></p>
+        <div class="inner-img" style="background-image: url('sojubang.jpg');"></div>
+        <p>Hint: You can get explanations when you find the same place</p>
+        <h2>History</h2>
+        <p>Sojubang was restored in about 100 years and opened to the public in May 2015. 
+        Sojubang was a restaurant that served as a place for meals, snacks, fruits and rice cakes.</p>
+        <h2>Inner Map</h2>
+        <div class="missionmap" style="height:600px; width:100%">
+        </div>
+        <p style="text-align: center;">You are now at Spot 14</p>
+        <h2>Insert your mission here!</h2>
+        <p>You can proceed to the next Stage when you have finished your mission.
+        </p>
+        <input type="text" onchange="visible(value)" style="margin-left:30%; margin-top:5%">
+        <input type="submit">
+        <div style="text-align: center">
+                <a href="mission6.html"><button id="button-visible" class="black">Next Mission</button></a>
+        </div>
+    </section>
+</body>
+<script>
+function visible(x) {
+    if (x == "well") {
+        document.getElementById("button-visible").style.visibility = "visible";
+    }
+
+}
+</script>
+
+</html>

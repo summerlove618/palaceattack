@@ -1,75 +1,94 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <title>Palace Attack</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Palace Attack</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
+    <script>
+    window.onscroll = function() { myFunction() };
+
+    function myFunction() {
+        if (document.documentElement.scrollTop > 200) {
+            document.getElementById("first").style.opacity = 1;
+        }
+        if (document.documentElement.scrollTop > 800) {
+            document.getElementById("second").style.opacity = 1;
+        }
+        if (document.documentElement.scrollTop > 1400) {
+            document.getElementById("third").style.opacity = 1;
+        }
+        if (document.documentElement.scrollTop > 2000) {
+            document.getElementById("fourth").style.opacity = 1;
+        }
+    }
+    </script>
 </head>
+
 <body>
-  <header class="main">
-      <h1>Palace <br>Attack</h1> 
-      <hr>   
-      <p>You can experience the four most beautiful<br> palaces
-       that you can find in Seoul City.<br>
-       You can click one of the four palaces <br>
-       to explore
-        more and start missions!</p>
-  </header>
-
-  <section>
-    <article class="kb">
-      <div class="innerpart">
-        <div class="innerbox">
-          <h1>GyeongBok <br>Palace</h1>
-          <hr>
-          <p>Gyeongbok Palace was built as the primary palace of the Chosun Kingdom by its founder, King Taejo in 1395.</p>
-          <a href="gyeongbok.html"><button>See More</button></a>
-        </div>  
-      </div>
-    </article>
-     <article class="cd">
-      <div class="innerpart">
-        <div class="innerbox">
-          <h1>ChangDeok <br>Palace</h1>
-          <hr>
-          <p>Construction of Changdok Palace was started in 1405 by King Taejong, and it was completed in 1412. In 1463, King Sejo expanded the palace and created Biwon (secret) Garden.</p>
-          <button>See More</button>
-          </div>
-      </div>
-    </article>
-     <article class="cg">
-      <div class="innerpart">
-        <div class="innerbox">
-          <h1>ChangGyeong <br>Palace</h1>
-          <hr>
-          <p>Changgyeong was originally built in 1104 as a summer palace for the kings of the Koryo Dynasty. When the capital was moved to Seoul in 1392, the King lived here during the construction of the new palace (Gyeongbok).</p>
-          <button>See More</button>
-          </div>
-      </div>
-    </article>
-     <article class="ds">
-      <div class="innerpart">
-        <div class="innerbox">
-          <h1>DeokSu <br>Palace</h1>
-          <hr>
-          <p>Deoksu Palace vividly contrasts modern Seoul with traditional Korea. Built during the mid-fifteenth century, it is the smallest of Seoul's palaces.</p>
-          <button>See More</button>
-          </div>
-      </div>
-    </article>
-    
-  </section>
-
-  <footer id="contacts">
-            <h3>Palace Attack</h3>
-            <p>010-8447-6003
-                <br> jaewonkim35@gmail.com
-            </p>
-            <hr style=" margin-bottom:3%;">
-            <p style="clear:both;">Copyright © Produced by Jae Won Kim</p>
-            <a href="#" target="_blank"><img src="facebook.png" class="sns"></a>
-            <a href="#" target="_blank"><img src="instagram.png" class="sns2"></a>
-  </footer>
+    <header class="main">
+        <h1>Palace <br>Attack</h1>
+        <hr>
+        <p>You can experience the four most beautiful
+            <br> palaces that you can find in Seoul City.
+            <br> You can click one of the four palaces
+            <br> to explore more and start missions!</p>
+    </header>
+    <section>
+        <article class="kb">
+            <div class="innerpart" id="first">
+                <div class="innerbox">
+                    <h1>GyeongBok <br>Palace</h1>
+                    <hr>
+                    <p>Gyeongbok Palace was built as the primary palace of the Chosun Kingdom by its founder, King Taejo in 1395.</p>
+                    <a href="gyeongbok.html">
+                        <button>See More</button>
+                    </a>
+                </div>
+            </div>
+        </article>
+        <article class="cd">
+            <div class="innerpart" id="second">
+                <div class="innerbox">
+                    <h1>ChangDeok <br>Palace</h1>
+                    <hr>
+                    <p>Construction of Changdok Palace was started in 1405 by King Taejong, and it was completed in 1412. In 1463, King Sejo expanded the palace and created Biwon (secret) Garden.</p>
+                    <button>See More</button>
+                </div>
+            </div>
+        </article>
+        <article class="cg">
+            <div class="innerpart" id="third">
+                <div class="innerbox">
+                    <h1>ChangGyeong <br>Palace</h1>
+                    <hr>
+                    <p>Changgyeong was originally built in 1104 as a summer palace for the kings of the Koryo Dynasty. When the capital was moved to Seoul in 1392, the King lived here during the construction of the new palace (Gyeongbok).</p>
+                    <button>See More</button>
+                </div>
+            </div>
+        </article>
+        <article class="ds">
+            <div class="innerpart" id="fourth">
+                <div class="innerbox">
+                    <h1>DeokSu <br>Palace</h1>
+                    <hr>
+                    <p>Deoksu Palace vividly contrasts modern Seoul with traditional Korea. Built during the mid-fifteenth century, it is the smallest of Seoul's palaces.</p>
+                    <button>See More</button>
+                </div>
+            </div>
+        </article>
+    </section>
+    <footer id="contacts">
+        <h3>Palace Attack</h3>
+        <p>010-8447-6003
+            <br> jaewonkim35@gmail.com
+        </p>
+        <hr style=" margin-bottom:3%;">
+        <p style="clear:both;">Copyright © Produced by Jae Won Kim</p>
+        <a href="#" target="_blank"><img src="facebook.png" class="sns"></a>
+        <a href="#" target="_blank"><img src="instagram.png" class="sns2"></a>
+    </footer>
 </body>
+
 </html>
