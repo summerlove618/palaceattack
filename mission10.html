@@ -24,16 +24,46 @@
             <p>Download Image</p>
         </a>
         <div style="text-align: center">
-            <a href="#" target="_blank"><img src="facebook.png" style="background-color:#0d47a1"></a>
-            <a href="#" target="_blank" "><img src="instagram.png " class="sns10 "></a><br>
+            <img src="facebook.png" style="background-color:#0d47a1" id="share">
+            <a href="http://www.instagram.com" target="_blank" "><img src="instagram.png " class="sns10 "></a><br>
             <a href="index.html ">
                 <button class="black ">Go to main</button> </a>
         </div>
        
     </section>
-</body>
-<script>
+    <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '160668934547294',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v2.11'
+    });
+  };
 
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js ";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
 </script>
-
+    <script>
+document.getElementById('share').onclick = function() {
+   FB.ui({
+    method: 'share',
+    display: 'popup',
+    href: 'https://www.summerlove618.github.io/palaceattack/mission10.html',
+  }, function(response){
+  	if (response && !response.error_message){
+  		alert('Posting Completed');
+  	}
+  	else{
+  		alert('Error while posting');
+  	}
+  });
+}
+</script>
+</body>
 </html>
